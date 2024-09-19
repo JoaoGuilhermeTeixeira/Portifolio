@@ -266,15 +266,15 @@ span{
 @keyframes words{
     0%,
     20%{
-        content: "Frontend Developer";
+        content: "Android Developer";
     }
     21%,
     40%{
-        content: "Web Developer";
+        content: "Mobile Developer";
     }
     41%,
     60%{
-        content: "Web Designer";
+        content: "Software Engineer ";
     }
     61%,
     80%{
@@ -643,11 +643,11 @@ span{
     border-radius: 1rem;
     padding: 2rem;
     width: auto;
-    margin-top: 5rem;
+    margin-top: 7rem;
 }
 
 .info img{
-    width: 8rem;
+    width: 10rem;
 }
 
 .skills .container .row{
@@ -658,8 +658,8 @@ span{
 }
 
 .skills .container .bar{
-    margin-bottom: 15px ;
-    padding: 10px;
+    margin-bottom: 21px ;
+    padding: 20px;
     border-radius: 1rem;
     background: var(--bg-color);
     transition: 0.3s ease;
