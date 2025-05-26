@@ -12,17 +12,40 @@ window.onscroll = () => {
         let id = sec.getAttribute('id');
 
 
-        if(top >= offset && top < offset + height){
+        if (top >= offset && top < offset + height) {
             navLinks.forEach(links => {
                 links.classList.remove('active');
                 document.querySelector('header nav a [href*=' + id + ' ]').classList.add('active')
             })
 
         }
-        
+
     });
 }
 
+
+document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".navbar a");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                navLinks.forEach(link => {
+                    link.classList.remove("active");
+                    const href = link.getAttribute("href").substring(1);
+                    if (href === entry.target.id) {
+                        link.classList.add("active");
+                    }
+                });
+            }
+        });
+    }, {
+        threshold: 0.5 // Ajuste conforme necessário
+    });
+
+    sections.forEach(section => observer.observe(section));
+});
 
 
 

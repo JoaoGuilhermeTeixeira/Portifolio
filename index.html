@@ -9,6 +9,31 @@
     <title>João Guilherme Teixeira</title>
 </head>
 
+<!-- <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".navbar a");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(link => {
+            link.classList.remove("active");
+            const href = link.getAttribute("href").substring(1);
+            if (href === entry.target.id) {
+              link.classList.add("active");
+            }
+          });
+        }
+      });
+    }, {
+      threshold: 0.5 // Ajuste conforme necessário
+    });
+
+    sections.forEach(section => observer.observe(section));
+  });
+</script> -->
+
 <body>
 
 
@@ -16,12 +41,10 @@
         <a href="#home" class="logo">João Guilherme
             <span>Teixeira</span></a>
 
-
         <i class="bx bx-menu" id="menu-icon"></i>
 
-
         <nav class="navbar">
-            <a href="#home" class="active">Início</a>
+            <a href="#home" >Início</a>
             <a href="#sobremim">Sobre Mim</a>
             <a href="#skills">Minhas Skills</a>
             <!-- <a href="#projects">Projetos</a> -->
@@ -29,7 +52,6 @@
         </nav>
 
     </header>
-
 
     <section class="home" id="home">
         <div class="home-content">
@@ -56,9 +78,9 @@
             </div>
             <div class="btn-group">
                 <a href="#contact" class="btn">Contratar</a>
-                <a href="https://wa.me/message/7EQEGNQRMMWDC1" class="btn">Contato</a>
+                <a href="https://wa.me/message/7EQEGNQRMMWDC1" class="btn" target="_blank"
+                    rel="noopener noreferrer">Contato</a>
             </div>
-
 
         </div>
 
@@ -94,7 +116,7 @@
                     <h3>Conclusão Ensino Médio</h3>
                     <p>
                         Nesse período que minha paixão por Software se consolidou. Já tendo conhecimento em <b>HTML,
-                            CSS, Javascript</b>, inspirado em evoluir, pela possibilidade de criar, inovar e Solucionar
+                        CSS, Javascript</b>, inspirado em evoluir, pela possibilidade de criar, inovar e Solucionar
                         Problemas.
                 </div>
 
@@ -108,10 +130,10 @@
                     <h3>Início das Graduações e Estágio</h3>
                     <p>
                         Comecei um bacharelado em <b>Engenharia de Software</b> e um tecnólogo em <b>Análise e
-                            Desenvolvimento de Sistemas</b>, buscando especialização e aprofundamento no Desenvolvimento
+                        Desenvolvimento de Sistemas</b>, buscando especialização e aprofundamento no Desenvolvimento
                         de Software. Nesse ano entrei em um <b>Estágio atuando como Suporte Técnico</b>.
                         Responsável pelo suporte ao sistema PDV (Ponto de Venda), auxiliando clientes com dúvidas,
-                        manutenção, correção de erros e conserto de máquinas e impressoras.
+                        manutenção, correção de erros, conserto e montagem de máquinas e impressoras.
 
                     </p>
                 </div>
@@ -121,7 +143,7 @@
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">2024</div>
                 <div class="timeline-content">
-                    <h3>Especializando em Desenvlvimento Web</h3>
+                    <h3>Especializando em Desenvolvimento Web</h3>
                     <p>
                         Me Identifiquei com <b>Desenvolvimento de Sistemas</b> e me Especializeie.
                         Continuamente Aprimorando Minhas Habilidades em <b>JavaScript; PHP; Python; SQL SERVER; JQUERY;
@@ -153,11 +175,6 @@
         </div>
 
     </section>
-
-
-
-
-
 
 
     <section class="skills" id="skills">
