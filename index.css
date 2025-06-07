@@ -239,7 +239,7 @@ span{
 }
 
 .text-animation span::before{
-    content: "Desenvolvedor Frontend";
+    content: "Desenvolvedor FullStack";
     color: var(--main-color);
     animation: words 20s infinite;
 }
@@ -270,7 +270,7 @@ span{
     }
     21%,
     40%{
-        content: "Front end Developer";
+        content: "FullStack  Developer";
     }
     41%,
     60%{
